@@ -1,0 +1,13 @@
+{
+  "name": "Getting Started Example",
+  "version": "1.0",
+  "description": "Build an Extension!",
+  "manifest_version": 2,
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },"content_scripts": [{"matches": ["<all_urls>"], "js": ["content.js"]}],
+  "permissions":["storage", "tabs", "activeTab"],
+  "browser_action":{},
+  "manifest_version": 2
+}
